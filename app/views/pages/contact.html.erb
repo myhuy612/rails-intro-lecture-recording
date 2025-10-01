@@ -1,0 +1,19 @@
+<h1>Contact Page</h1>
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<%= link_to "Home", root_path  %>
+
+<form action="/contact" type="get">
+  <label for="member">Please type a name</label>
+  <input id="member"
+  name="member"
+  type="text"
+  value="<%= params[:member] %>"
+  placeholder="who are you searching for?"><!--name is the key-->
+  <input type="submit">
+</form> <!--path to go to when submit form-->

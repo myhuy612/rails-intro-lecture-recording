@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # GET localhost:3000/about
+  root to: "pages#about"
+
+  # GET localhost:3000/contact
+  get "/contact", to: "pages#contact"
 end
