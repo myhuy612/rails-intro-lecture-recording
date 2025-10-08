@@ -13,4 +13,10 @@ Rails.application.routes.draw do
 
   # GET localhost:3000/contact
   get "/contact", to: "pages#contact"
+
+  # GET localhost:3000/restaurants
+  get "/restaurants", to: "restaurants#index"
+
+  # GET localhost:3000/restaurants/4
+  get "/restaurants/:id", to "restaurants#show"
 end
