@@ -18,5 +18,5 @@ Rails.application.routes.draw do
   get "/restaurants", to: "restaurants#index"
 
   # GET localhost:3000/restaurants/4
-  get "/restaurants/:id", to "restaurants#show"
+  get "/restaurants/:id", to: "restaurants#show"
 end
